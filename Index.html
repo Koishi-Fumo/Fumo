@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fumo gift</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #bfa3a3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #gift-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        #fumo {
+            display: none;
+            align-items: center;
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div id="gift-box" onclick="revealfumo()">
+        <img src="gift-box.png" alt="Gift Box" width="600" height="600">
+    </div>
+
+    <div id="fumo">
+        <img src="fumo.png" alt="fumo" width="450" height="580">
+    </div>
+
+    <script>
+        function revealfumo() {
+            var giftBox = document.getElementById('gift-box');
+            var fumo = document.getElementById('fumo');
+            giftBox.style.display = 'none';
+            fumo.style.display = 'block';
+            
+        }
+    </script>
+</body>
+</html>
